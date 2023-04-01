@@ -82,7 +82,7 @@ const EditDeck = () => {
 
     try {
       await axios.patch(
-        `https://ul6ksnhgw5.execute-api.us-east-1.amazonaws.com/dev/addcardtodeck/${deckid}`,
+        `https://ul6ksnhgw5.execute-api.us-east-1.amazonaws.com/dev/addcardtodeck/${deckId}`,
         { card: card },
         {
           headers: { Authorization: `Bearer ${token}` },
