@@ -27,7 +27,7 @@ const DecksList = () => {
   const getDecksByOwnerId = async (id) => {
     try {
       const response = await axios.get(
-        `https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/dev/getdeckbyownerid/${id}`
+        `ttps://ul6ksnhgw5.execute-api.us-east-1.amazonaws.com/dev/getdeckbyownerid/${id}`
       );
       setDecks(response.data);
     } catch (err) {
@@ -45,7 +45,7 @@ const DecksList = () => {
   const deleteDeck = async (id) => {
     try {
       await axios.delete(
-        `https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/dev/deletebyid/${id}`,
+        `https://ul6ksnhgw5.execute-api.us-east-1.amazonaws.com/dev/deletedeckbyid/${id}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
